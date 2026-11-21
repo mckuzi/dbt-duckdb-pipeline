@@ -11,4 +11,5 @@ select
 	search_date,
 	search_term
 from {{ source('raw', 'job_postings') }}
-where "error" is null
+where 1=1
+	and "error" is null
